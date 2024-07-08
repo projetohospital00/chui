@@ -4,8 +4,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   selector: 'app-default-login-layout',
   standalone: true,
   imports: [],
-  templateUrl: './defalt-login-layout.component.html',
-  styleUrl: './defalt-login-layout.component.scss'
+  templateUrl: './default-login-layout.component.html',
+  styleUrl: './default-login-layout.component.scss'
 })
 export class DefaultLoginLayoutComponent {
   @Input() title: string = "";
@@ -15,7 +15,7 @@ export class DefaultLoginLayoutComponent {
   @Output("submit") onSubmit = new EventEmitter();
 
   @Output("navigate") onNavigate = new EventEmitter();
-
+  
   submit(){
     this.onSubmit.emit();
   }
