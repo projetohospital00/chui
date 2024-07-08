@@ -1,7 +1,7 @@
 <app-default-login-layout
-    title="Login into your account"
-    primaryBtnText="Login Now"
-    secondaryBtnText="Signup Now"
+    title="Entre com a sua conta"
+    primaryBtnText="Entrar"
+    secondaryBtnText="Registrar-se"
     (submit)="submit()"
     (navigate)="navigate()"
     [disablePrimaryBtn]="!loginForm.valid"
@@ -12,7 +12,7 @@
             inputName="email"
             type="email"
             label="Email"
-            placeholder="johndoe@gmail.com"
+            placeholder="chui@gmail.com"
         >
             <img src="/assets/svg/email-icon.svg"/>
         </app-primary-input>
@@ -20,10 +20,10 @@
             formControlName="password"
             inputName="password"
             type="password"
-            label="Your Password"
+            label="Sua senha"
         >
         <img src="/assets/svg/password-icon.svg"/>
     </app-primary-input>
-    <span>Forgot password?</span>
+    <span>Esqueceu sua senha?</span>
     </form>
 </app-default-login-layout>
